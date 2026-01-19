@@ -1,0 +1,296 @@
+:root {
+    --bg-color: #eae0d5;
+    --text-color: #111111;
+    --accent-red: #c1121f;
+    --accent-blue: #669bbc;
+    --font-heading: 'Syncopate', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+}
+
+::selection {
+    background: var(--accent-red);
+    color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Utilities */
+.h-massive {
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 15vw, 12rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.h-massive:hover {
+    -webkit-text-stroke: 2px var(--accent-blue);
+    color: transparent;
+}
+
+.h-large {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    color: var(--accent-red);
+    /* Accent Red for vertical text */
+    font-weight: 600;
+}
+
+/* Layout Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.role-ticker {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 1px solid var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.role-ticker:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.name-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* SERVICES / SKILLS */
+.section {
+    padding: 6rem 2rem;
+    border-bottom: 1px solid rgba(15, 15, 15, 0.2);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.skill-card {
+    border-top: 1px solid var(--text-color);
+    padding-top: 1rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--accent-red);
+}
+
+.skills-list .skill-card:nth-child(2):hover {
+    border-top-color: var(--accent-blue);
+}
+
+.skill-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--accent-blue);
+    /* Default Blue for numbers */
+}
+
+.skills-list .skill-card:nth-child(2) .skill-number {
+    color: var(--accent-red);
+    /* Alternate Red */
+}
+
+/* MARQUEE SECTION */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    padding: 2rem 0;
+    margin: 4rem 0;
+    background: #000000;
+    color: var(--bg-color);
+    transition: background 0.3s ease;
+}
+
+.marquee-container:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* EXPERIENCE SECTION */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--text-color);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.experience-item:first-child {
+    border-top: 1px solid var(--text-color);
+}
+
+.experience-item:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.exp-role {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.exp-desc {
+    font-size: 1rem;
+    opacity: 0.7;
+    max-width: 50%;
+    text-align: right;
+}
+
+.experience-item:hover .exp-desc {
+    opacity: 1;
+}
+
+/* CONTACT */
+.contact-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.5rem 4rem;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-btn:hover {
+    background: var(--accent-red);
+    border-color: var(--accent-red);
+    color: white;
+    box-shadow: 4px 4px 0px #000000;
+    transform: translate(-2px, -2px);
+}
+
+/* UTILS */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
