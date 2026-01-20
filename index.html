@@ -20,11 +20,22 @@
 
 <body>
 
+
+
     <!-- HERO SECTION -->
     <header class="hero" id="inicio">
         <div class="hero-header reveal-text">
-            <span>DISPONIBLE</span>
-            <div class="role-ticker">Programador • Experto en IA</div>
+            <span data-i18n="status">DISPONIBLE</span>
+
+            <div class="header-controls">
+                <div class="role-ticker" data-i18n="role">Programador • Experto en IA</div>
+                <!-- Language Toggle -->
+                <div class="lang-toggle">
+                    <button id="btn-es" class="lang-btn active">ES</button>
+                    <span style="opacity: 0.3;">/</span>
+                    <button id="btn-en" class="lang-btn">EN</button>
+                </div>
+            </div>
         </div>
 
         <div class="name-container">
@@ -35,15 +46,15 @@
         <div class="hero-footer reveal-text" style="transition-delay: 0.3s;">
             <div style="max-width: 400px;">
                 <p>SOFTWARE ENGINEER & AI SPECIALIST</p>
-                <p>Transformando datos en decisiones y código en soluciones inteligentes.</p>
+                <p data-i18n="subtitle">Transformando datos en decisiones y código en soluciones inteligentes.</p>
             </div>
-            <div class="text-vertical">SCROLL PARA MÁS</div>
+            <div class="text-vertical" data-i18n="scroll">SCROLL PARA MÁS</div>
         </div>
     </header>
 
     <!-- ROLLING MARQUEE -->
     <div class="marquee-container">
-        <div class="marquee-content">
+        <div class="marquee-content" data-i18n="marquee">
             INTELIGENCIA ARTIFICIAL — BUSINESS INTELLIGENCE — SOFTWARE — AUTOMATIZACIÓN —
             INTELIGENCIA ARTIFICIAL — BUSINESS INTELLIGENCE — SOFTWARE — AUTOMATIZACIÓN —
         </div>
@@ -52,13 +63,14 @@
     <!-- SERVICES / EXPERTISE -->
     <section class="section" id="servicios">
         <div class="grid-container">
-            <div class="text-vertical" style="grid-column: span 1;">SERVICIOS</div>
+            <div class="text-vertical" style="grid-column: span 1;" data-i18n="services_label">SERVICIOS</div>
             <div style="grid-column: span 11;">
-                <h2 class="h-large reveal-text">Lo que hago</h2>
+                <h2 class="h-large reveal-text" data-i18n="services_title">Lo que hago</h2>
 
                 <div class="skills-grid">
                     <div style="align-self: flex-start;">
-                        <p class="reveal-text">Combino la lógica del desarrollo de software con el poder predictivo de
+                        <p class="reveal-text" data-i18n="services_desc">Combino la lógica del desarrollo de software
+                            con el poder predictivo de
                             la IA para construir ecosistemas digitales eficientes.</p>
                     </div>
 
@@ -66,32 +78,36 @@
                         <!-- Card 1 -->
                         <div class="skill-card reveal-text">
                             <span class="skill-number">01</span>
-                            <h3>Agentes de IA & Automatización</h3>
-                            <p>Creación de sistemas autónomos que optimizan flujos de trabajo. Desde chatbots avanzados
+                            <h3 data-i18n="s1_title">Agentes de IA & Automatización</h3>
+                            <p data-i18n="s1_desc">Creación de sistemas autónomos que optimizan flujos de trabajo. Desde
+                                chatbots avanzados
                                 hasta agentes de toma de decisiones.</p>
                         </div>
 
                         <!-- Card 2 -->
                         <div class="skill-card reveal-text" style="transition-delay: 0.1s;">
                             <span class="skill-number">02</span>
-                            <h3>Desarrollo de Software</h3>
-                            <p>Ingeniería de software robusta y escalable. Arquitecturas modernas enfocadas en
+                            <h3 data-i18n="s2_title">Desarrollo de Software</h3>
+                            <p data-i18n="s2_desc">Ingeniería de software robusta y escalable. Arquitecturas modernas
+                                enfocadas en
                                 rendimiento y experiencia de usuario.</p>
                         </div>
 
                         <!-- Card 3 -->
                         <div class="skill-card reveal-text" style="transition-delay: 0.2s;">
                             <span class="skill-number">03</span>
-                            <h3>Business Intelligence</h3>
-                            <p>Análisis de datos profundo para la toma de decisiones estratégicas. Transformo números
+                            <h3 data-i18n="s3_title">Business Intelligence</h3>
+                            <p data-i18n="s3_desc">Análisis de datos profundo para la toma de decisiones estratégicas.
+                                Transformo números
                                 crudos en rutas de acción claras.</p>
                         </div>
 
                         <!-- Card 4 -->
                         <div class="skill-card reveal-text" style="transition-delay: 0.3s;">
                             <span class="skill-number">04</span>
-                            <h3>Marketing Digital & Ads</h3>
-                            <p>Gestión estratégica de campañas en Meta Ads y Google Ads. Maximización de alcance y ROI
+                            <h3 data-i18n="s4_title">Marketing Digital & Ads</h3>
+                            <p data-i18n="s4_desc">Gestión estratégica de campañas en Meta Ads y Google Ads.
+                                Maximización de alcance y ROI
                                 mediante segmentación precisa.</p>
                         </div>
                     </div>
@@ -103,9 +119,9 @@
     <!-- EXPERIENCE SECTION -->
     <section class="section" id="trayectoria">
         <div class="grid-container">
-            <div class="text-vertical" style="grid-column: span 1;">TRAYECTORIA</div>
+            <div class="text-vertical" style="grid-column: span 1;" data-i18n="career_label">TRAYECTORIA</div>
             <div style="grid-column: span 11;">
-                <h2 class="h-large reveal-text">Experiencia</h2>
+                <h2 class="h-large reveal-text" data-i18n="career_title">Experiencia</h2>
 
                 <div class="experience-list">
                     <!-- Item 1 -->
@@ -150,14 +166,15 @@
     <!-- CONTACT SECTION -->
     <section class="contact-section" id="contacto">
         <div class="reveal-text">
-            <p class="role-ticker" style="display: inline-block;">HABLEMOS</p>
-            <h2 class="h-large" style="margin-top: 2rem;">¿Listo para escalar?</h2>
+            <p class="role-ticker" style="display: inline-block;" data-i18n="contact_label">HABLEMOS</p>
+            <h2 class="h-large" style="margin-top: 2rem;" data-i18n="contact_title">¿Listo para escalar?</h2>
 
             <a href="https://wa.me/522213419629" target="_blank" class="contact-btn">
                 WhatsApp: +52 221 341 9629
             </a>
 
-            <p style="margin-top: 2rem; opacity: 0.6;">Con base en México, trabajando globalmente.</p>
+            <p style="margin-top: 2rem; opacity: 0.6;" data-i18n="contact_location">Con base en México, trabajando
+                globalmente.</p>
         </div>
     </section>
 
@@ -168,15 +185,18 @@
             <small>© <span id="year">2026</span></small>
         </div>
         <div style="text-align: right;">
-            <a href="#inicio" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;">INICIO</a>
-            <a href="#servicios"
-                style="color: var(--text-color); text-decoration: none; margin-left: 1rem;">SERVICIOS</a>
-            <a href="#trayectoria"
-                style="color: var(--text-color); text-decoration: none; margin-left: 1rem;">TRAYECTORIA</a>
-            <a href="#contacto" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;">CONTACTO</a>
+            <a href="#inicio" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;"
+                data-i18n="nav_home">INICIO</a>
+            <a href="#servicios" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;"
+                data-i18n="nav_services">SERVICIOS</a>
+            <a href="#trayectoria" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;"
+                data-i18n="nav_career">TRAYECTORIA</a>
+            <a href="#contacto" style="color: var(--text-color); text-decoration: none; margin-left: 1rem;"
+                data-i18n="nav_contact">CONTACTO</a>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 
