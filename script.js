@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const revealOnScroll = () => {
         const windowHeight = window.innerHeight;
-        const elementVisible = 150;
+        const elementVisible = 50;
 
         reveals.forEach((reveal) => {
             const elementTop = reveal.getBoundingClientRect().top;
@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', revealOnScroll);
-    
+
     // Trigger once on load
     revealOnScroll();
-    
+
     // Dynamic year
     const yearSpan = document.querySelector('#year');
-    if(yearSpan) yearSpan.innerText = new Date().getFullYear();
+    if (yearSpan) yearSpan.innerText = new Date().getFullYear();
 });

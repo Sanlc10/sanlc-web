@@ -149,7 +149,7 @@ body {
     border-top-color: var(--accent-red);
 }
 
-.skills-list .skill-card:nth-child(2):hover {
+.skills-list .skill-card:nth-child(even):hover {
     border-top-color: var(--accent-blue);
 }
 
@@ -162,7 +162,7 @@ body {
     /* Default Blue for numbers */
 }
 
-.skills-list .skill-card:nth-child(2) .skill-number {
+.skills-list .skill-card:nth-child(even) .skill-number {
     color: var(--accent-red);
     /* Alternate Red */
 }
