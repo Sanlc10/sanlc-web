@@ -34,7 +34,22 @@ const translations = {
         "nav_home": "INICIO",
         "nav_services": "SERVICIOS",
         "nav_career": "TRAYECTORIA",
-        "nav_contact": "CONTACTO"
+        "nav_projects": "PROYECTOS",
+        "nav_contact": "CONTACTO",
+        "projects_label": "PROYECTOS",
+        "projects_title": "Proyectos Destacados",
+        "p1_title": "Canon Workspace",
+        "p1_cat": "Desarrollo de Software (End-to-End)",
+        "p1_desc": "Aplicación web: Calendario inteligente impulsado por IA que te permite gestionar tu tiempo, organizar tareas y lograr tus objetivos.",
+        "p1_stack": "Stack: React, TypeScript, Next.js, Supabase, MongoDB, FastAPI, OpenAI, Stripe",
+        "p2_title": "Canon Agent",
+        "p2_cat": "Desarrollo de Inteligencia Artificial",
+        "p2_desc": "Agente de IA integrado a 'Canon Workspace' que ayuda a los usuarios a planificar, organizar su tiempo y sugerir con contexto usando RAG.",
+        "p2_stack": "Stack: OpenAI, LangChain, MongoDB, Integración Fullstack",
+        "p3_title": "Canon Landing Page",
+        "p3_cat": "Desarrollo Web",
+        "p3_desc": "Landing page moderna y de alto rendimiento para la suite de Canon.",
+        "p3_stack": "Stack: React, Tailwind CSS, Next.js"
     },
     en: {
         "status": "AVAILABLE",
@@ -71,6 +86,21 @@ const translations = {
         "nav_home": "HOME",
         "nav_services": "SERVICES",
         "nav_career": "CAREER",
-        "nav_contact": "CONTACT"
+        "nav_projects": "PROJECTS",
+        "nav_contact": "CONTACT",
+        "projects_label": "PROJECTS",
+        "projects_title": "Featured Projects",
+        "p1_title": "Canon Workspace",
+        "p1_cat": "Software Development (End-to-End)",
+        "p1_desc": "Web application: Smart Calendar powered by AI that allows you to manage your time, organize tasks and achieve your goals.",
+        "p1_stack": "Stack: React, TypeScript, Next.js, Supabase, MongoDB, FastAPI, OpenAI, Stripe",
+        "p2_title": "Canon Agent",
+        "p2_cat": "Artificial Intelligence Development",
+        "p2_desc": "AI Agent integrated into 'Canon Workspace' that helps users plan, organize schedules, and provide context-aware suggestions using RAG.",
+        "p2_stack": "Stack: OpenAI, LangChain, MongoDB, Fullstack Integration",
+        "p3_title": "Canon Landing Page",
+        "p3_cat": "Web Development",
+        "p3_desc": "High-performance landing page for the Canon suite.",
+        "p3_stack": "Stack: React, Tailwind CSS, Next.js"
     }
 };
